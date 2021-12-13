@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <AppBar position='static'>
             <Toolbar >
-                <Typography variant='h4'>
+                <Typography variant='h6'>
                     Age Calculator
                 </Typography>
             </Toolbar>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { CssBaseline, Grid } from '@material-ui/core';
+import { Box, CssBaseline, Grid } from '@material-ui/core';
 
 // importing components
 import Header from './components/Header/Header';
@@ -13,14 +13,16 @@ const App = () => {
         <>
             <CssBaseline />
             <Header />
-            <Grid container spacing={2}>
-                <Grid item xs={12} md={6}>
-                    <AgeCalculator />
+            
+                <Grid container spacing={2}>
+                    <Grid item xs={12} md={6}>
+                        <AgeCalculator />
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <Description />
+                    </Grid>
                 </Grid>
-                <Grid item xs={12} md={6}>
-                    <Description />
-                </Grid>
-            </Grid>
+            
             <Footer />
         </>
     )
