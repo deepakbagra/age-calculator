@@ -1,6 +1,7 @@
 import { Box,  Button, TextField } from '@material-ui/core';
 import { useState } from 'react';
 import useStyle from './styles';
+import MyDatePicker from './MyDatePicker';
 
 const AgeCalculator = () => {
     const classes = useStyle();
@@ -47,8 +48,8 @@ const AgeCalculator = () => {
     }
     
     return (
-        <Box bgcolor='grey' bgcolor='green'>
-            <TextField
+        <Box >
+            {/* <TextField            
              type='text'
              label='birth-year'
              required
@@ -60,10 +61,13 @@ const AgeCalculator = () => {
                 variant='contained'                
                 type='submit'
                 color='secondary'
-                onClick={handleSubmit}>Calculate</Button>
+                onClick={handleSubmit}>Calculate</Button> */}
+
+            <MyDatePicker/>
 
            
         </Box>
+        
     )
 }
 
