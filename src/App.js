@@ -1,5 +1,5 @@
 import { React } from 'react';
-import {  Box, CssBaseline, Grid } from '@material-ui/core';
+import {  Box, CssBaseline } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 // importing components

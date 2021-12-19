@@ -1,5 +1,4 @@
 import isLeapYear from 'date-fns/isLeapYear';
-import AgeCalculation from './AgeCalculation';
 
 // global variables
 let calAgeDay = 0;
@@ -82,9 +81,7 @@ const countLeapYears = (startYear, endYear) => {
 const calAgeInDays = (startDate, endDate) => {
     
     const startMonth = startDate[1];
-    const startYear = startDate[2];
-    
-    const endMonth = endDate[1];
+    const startYear = startDate[2];    
     const endYear = endDate[2];
 
     // calculate years into days
@@ -133,12 +130,29 @@ export const bDayCount = (inputDob) => {
     let result = calculations(currentDate, endDate);
 
     let bDayCountdown = result[0];    
-    let bDayCountdownYear = bDayCountdown[0];
-    let bDayCountdownMonth = bDayCountdown[1];
-    let bDayCountdownDay = bDayCountdown[2]; 
+    let bDayCountdownMonth = bDayCountdown[1];    
+    let bDayCountdownDay = bDayCountdown[2];
 
-    let bDayCountdownDays = result[1];    
-
+    // calulcate days for the current month
+    let bDayCountdownDays = 0;
+    let month = currentMonth;
+    bDayCountdownDays = eachMonthDays[month] - currentDay;    
+   
+    // adding days for in-between months
+    month++;
+    month %= 13;
+    if (month === 0) month++; 
+    while (month !== endMonth) {
+        month %= 13;
+        if (month === 0) month++;
+        bDayCountdownDays += eachMonthDays[month];
+        console.log(eachMonthDays[month]);
+        month++;        
+    }
+    
+    // adding for the birthday's month
+    bDayCountdownDays += endDay;   
+    
     let resultBday = [bDayCountdownMonth,
          bDayCountdownDay, bDayCountdownDays];
 

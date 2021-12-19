@@ -4,7 +4,6 @@ import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import { TextField, Button } from '@mui/material';
 import DisplayAge from './DisplayAge';
-import isLeapYear from 'date-fns/isLeapYear';
 import { calculations, bDayCount } from './calculations';
 
 // global variables
