@@ -5,7 +5,8 @@ const Footer = () => {
     const classes = useStyle();
 
     return (
-        <Box position='static' alignItems='center' justifyContent='center' m='auto' className={classes.root}>
+        <Box position='static' alignItems='center'
+            justifyContent='center' m='auto' className={classes.root}>
             <Typography className={classes.text}>
                 {new Date().getFullYear()}  
                 {'Copyright © '}
