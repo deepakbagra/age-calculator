@@ -1,6 +1,7 @@
 import { React } from 'react';
 import {  Box, CssBaseline } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { ThemeProvider, createTheme, makeStyles } from '@material-ui/core/styles';
+
 
 // importing components
 import Header from './components/Header/Header';
@@ -9,6 +10,15 @@ import AgeCalculation from './components/AgeCalculator/AgeCalculation';
 import Description from './components/Description/Description';
 
 const App = () => {
+
+    const theme = createTheme({
+        typography: {
+          fontFamily: [
+            'Raleway',
+            'sans-serif',
+          ].join(','),
+        },        
+    });
 
     const useStyles = makeStyles(theme => ({
        ageCalculation: {  
@@ -40,7 +50,7 @@ const App = () => {
     const classes = useStyles();    
    
     return (
-        <Box >
+        <ThemeProvider theme={theme}>
             <CssBaseline />
             <Header />
             <Box className={classes.ageCalculation}>
@@ -52,8 +62,7 @@ const App = () => {
                        
             <Footer />
 
-
-        </Box>
+        </ThemeProvider>
     )
 }
 

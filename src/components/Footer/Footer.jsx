@@ -10,7 +10,7 @@ const Footer = () => {
             <Typography className={classes.text}>
                 {new Date().getFullYear()}  
                 {'Copyright © '}
-                    | calculatemyage.io.github.com | All Rights Reserved.
+                    | findmyage.netlify.app | All Rights Reserved.
             </Typography>
         </Box>
     )

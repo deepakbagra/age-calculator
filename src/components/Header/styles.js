@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const myFontSize = 18;
+const myFontSize = 17;
 
 export default makeStyles(theme => ({
     appBar: {
@@ -12,21 +12,8 @@ export default makeStyles(theme => ({
       
     },
 
-    leftSide: {
-        fontFamily: [
-            '-apple-system',
-            'BlinkMacSystemFont',
-            '"Segoe UI"',
-            'Roboto',
-            '"Helvetica Neue"',
-            'Arial',
-            'sans-serif',
-            '"Apple Color Emoji"',
-            '"Segoe UI Emoji"',
-            '"Segoe UI Symbol"',
-          ].join(','),
-          flexGrow: 1 ,
-          marginBottom: '7px',
+    leftSide: {        
+          flexGrow: 1 ,          
           fontSize: myFontSize,
           [theme.breakpoints.down('xs')]: {
             fontSize: 14,
@@ -34,24 +21,11 @@ export default makeStyles(theme => ({
           },
     },
 
-    rightSide: {
-      marginBottom: '7px',        
-      fontFamily: [
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"Segoe UI"',
-          'Roboto',
-          '"Helvetica Neue"',
-          'Arial',
-          'sans-serif',
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-        ].join(','),
-        fontSize: myFontSize,
-        [theme.breakpoints.down('xs')]: {
-          fontSize: 14,
-          marginBottom: '20px'
+    rightSide: {     
+      fontSize: myFontSize,
+      [theme.breakpoints.down('xs')]: {
+        fontSize: 14,
+        marginBottom: '20px'
         },
       },
        

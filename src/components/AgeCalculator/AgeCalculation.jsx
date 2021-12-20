@@ -2,7 +2,7 @@ import { useState , React } from 'react';
 import DatePicker  from '@mui/lab/DatePicker';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
-import { TextField, Button } from '@mui/material';
+import { Typography, TextField, Button } from '@mui/material';
 import DisplayAge from './DisplayAge';
 import { calculations, bDayCount } from './calculations';
 import { isValid } from 'date-fns';
@@ -88,6 +88,11 @@ const AgeCalculation = () => {
   return (
     <>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
+        <Typography gutterBottom marginBottom={'2%'}
+         bgcolor={'#efebe9'} className={classes.input} >
+          Please pick your date-of-birth from the Calendar Icon
+          or type in the box below in dd/mm/yyyy format to calculate your age.</Typography>
+        
         <DatePicker          
                    
           disableFuture
@@ -95,16 +100,21 @@ const AgeCalculation = () => {
           label="date-of-birth (dd/mm/yyyy)"              
           value={selectDate}
           onChange={handleChangeDate}          
-          renderInput={props =>
+          renderInput={params =>
              <TextField
              fullWidth             
-             {...props} />}
+             {...params}
+             sx={{
+               svg: {color:'#bf360c'},
+               label: {color: 'blue'}
+             }} />}
         />
       </LocalizationProvider >
-      <Button fullWidth className={classes.wrapButton}
+      <Button fullWidth className={classes.button}
           onClick={handleOnSubmit} 
-      >
-          Click Me to Calculate Age </Button> 
+      > <Typography>
+          Click Me to Calculate Age </Typography>
+      </Button> 
       
         {displayResult ?
          <DisplayAge 
