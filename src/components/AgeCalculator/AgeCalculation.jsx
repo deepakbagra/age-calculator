@@ -89,7 +89,7 @@ const AgeCalculation = () => {
     <>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
         <DatePicker          
-          showMonthDropdown         
+                   
           disableFuture
           inputFormat='dd/MM/yyyy'
           label="date-of-birth (dd/mm/yyyy)"              
