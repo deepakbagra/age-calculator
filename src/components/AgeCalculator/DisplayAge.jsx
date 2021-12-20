@@ -7,19 +7,18 @@ import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 
-const myFontSize = 13;
-
+const myFontSize = 14;
 const DisplayAge = (props) => {
+    
     return (        
             
-        <Card sx={{ maxWidth: 300 }} style={{ backgroundColor: '#CBD4CD', height:'40%'}}>
+        <Card style={{ backgroundColor: '#CBD4CD', height:'40%'}}>
             <CardMedia
                 component="img"                
                 height='100px'
                 image={birthDayLogo}
                 alt="my age"
-            />            
-
+            />
             <CardContent style={{display:'flex'}} >
                 <EmojiObjectsIcon />
                 <Typography style={{fontSize : myFontSize}} component="div" >
@@ -31,7 +30,8 @@ const DisplayAge = (props) => {
 
             <CardContent style={{display:'flex'}} >
                 <CakeIcon />
-                <Typography style={{fontSize : myFontSize}} component="div">Birthday Countdown...</Typography>
+                <Typography style={{fontSize : myFontSize}}
+                     component="div">Birthday Countdown...</Typography>
             </CardContent>
             <CardContent style={{display:'flex'}} >
                 <HourglassTopIcon />

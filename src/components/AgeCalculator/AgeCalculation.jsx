@@ -101,14 +101,14 @@ const AgeCalculation = () => {
              {...props} />}
         />
       </LocalizationProvider >
-      <Button 
+      <Button fullWidth
           onClick={handleOnSubmit}                    
           style={{textTransform:'none',
-                 fontSize:15,                                 
+                 fontSize:15,                                
                  color:'#bf360c',
                 }}
           >
-          Calculate Age </Button> 
+          Click Me to Calculate Age </Button> 
       
         {displayResult ?
          <DisplayAge 

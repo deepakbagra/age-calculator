@@ -17,9 +17,11 @@ export default makeStyles(theme => ({
         }            
     },
     text: {
-        fontSize: '80%',
+        fontSize: '80%',        
         [theme.breakpoints.down('xs')]: {
-            fontSize: '70%',            
-        }
+            fontSize: '60%',
+            marginTop: '0.9%'            
+        },
+       
     }
 }));

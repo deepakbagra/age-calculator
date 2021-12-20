@@ -1,11 +1,14 @@
 import { Box, Typography } from '@material-ui/core';
+import useStyle from './styles';
 
 const Description = () => {
+    const classes = useStyle();
     return (
         <Box >
             <Typography variant='body1'>How Old Am I ?</Typography>
-            <Typography               
-                style={{ wordWrap: "break-word", fontSize: 12 }}>
+
+            <Typography className={classes.wrapText}>
+
                 It is famously quoted that "Age is just a number".
                 I believe this is not merely a number but more than that.
                 This number helps you recall your past memory filled with
@@ -17,8 +20,7 @@ const Description = () => {
                 some of the decisions you made earlier and regret later. This number also
                 inspires you restart your life aiming to fulfill
                 your dreams. Therefore, this is not just a number, but much more than that.</p>
-                    
-         
+                             
             </Typography>
         </Box>
     )

@@ -11,16 +11,29 @@ import Description from './components/Description/Description';
 const App = () => {
 
     const useStyles = makeStyles(theme => ({
-       root: {  
+       ageCalculation: {  
             backgroundColor:'#efebe9',           
             height: '50%',
             width: '50%',
             margin: '13% 25%',
             [theme.breakpoints.down('xs')]: {
-                margin: '5% 5%',
-                width: '90%'
+                margin: '10% 10%',
+                width: '80%'
             }
-       }       
+       },
+       description: {  
+        backgroundColor:'#efebe9',           
+        height: '50%',
+        width: '50%',
+        margin: '13% 25%',
+        [theme.breakpoints.down('xs')]: {
+            margin: '17% 10%',
+            width: '80%'
+        },
+        [theme.breakpoints.up('md')]: {
+            margin: '15% 25%',     
+        }
+   }       
 
     }));
 
@@ -30,10 +43,10 @@ const App = () => {
         <Box >
             <CssBaseline />
             <Header />
-            <Box className={classes.root}>
+            <Box className={classes.ageCalculation}>
                 <AgeCalculation/>
             </Box>
-            <Box className={classes.root}>
+            <Box className={classes.description}>
                 <Description /> 
             </Box> 
                        
