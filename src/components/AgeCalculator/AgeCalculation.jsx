@@ -5,9 +5,7 @@ import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import { TextField, Button } from '@mui/material';
 import DisplayAge from './DisplayAge';
 import { calculations, bDayCount } from './calculations';
-import { isRangeValid } from '@mui/lab/internal/pickers/date-utils';
 import { isValid } from 'date-fns';
-
 
 // global variables
 const currentDay = new Date().getDate();
