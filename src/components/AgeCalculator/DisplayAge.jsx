@@ -8,7 +8,6 @@ import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 import useStyle from './styles';
 
-const myFontSize = 14;
 const DisplayAge = (props) => {
     const classes = useStyle();
     
