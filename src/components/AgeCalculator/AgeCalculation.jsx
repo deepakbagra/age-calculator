@@ -6,6 +6,7 @@ import { TextField, Button } from '@mui/material';
 import DisplayAge from './DisplayAge';
 import { calculations, bDayCount } from './calculations';
 import { isValid } from 'date-fns';
+import useStyle from './styles';
 
 // global variables
 const currentDay = new Date().getDate();
@@ -13,6 +14,7 @@ const currentMonth = new Date().getMonth()+1;
 const currentYear = new Date().getFullYear();
 
 const AgeCalculation = () => {
+  const classes = useStyle();
 
   // initialising states
   const [selectDate, setSelectDate] = useState(new Date());   
@@ -99,13 +101,9 @@ const AgeCalculation = () => {
              {...props} />}
         />
       </LocalizationProvider >
-      <Button fullWidth
-          onClick={handleOnSubmit}                    
-          style={{textTransform:'none',
-                 fontSize:15,                                
-                 color:'#bf360c',
-                }}
-          >
+      <Button fullWidth className={classes.wrapButton}
+          onClick={handleOnSubmit} 
+      >
           Click Me to Calculate Age </Button> 
       
         {displayResult ?

@@ -6,9 +6,11 @@ import CakeIcon from '@mui/icons-material/Cake';
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import CelebrationIcon from '@mui/icons-material/Celebration';
+import useStyle from './styles';
 
 const myFontSize = 14;
 const DisplayAge = (props) => {
+    const classes = useStyle();
     
     return (        
             
@@ -21,7 +23,7 @@ const DisplayAge = (props) => {
             />
             <CardContent style={{display:'flex'}} >
                 <EmojiObjectsIcon />
-                <Typography style={{fontSize : myFontSize}} component="div" >
+                <Typography className={classes.wrapText} component="div" >
                     {`You are ${props.years} years,
                     ${props.months} months, and ${props.days} days old
                     or total ${props.daysOnly} days old.  `}
@@ -30,12 +32,13 @@ const DisplayAge = (props) => {
 
             <CardContent style={{display:'flex'}} >
                 <CakeIcon />
-                <Typography style={{fontSize : myFontSize}}
+                <Typography className={classes.wrapText}
                      component="div">Birthday Countdown...</Typography>
             </CardContent>
             <CardContent style={{display:'flex'}} >
                 <HourglassTopIcon />
-                <Typography style={{fontSize : myFontSize}} component="div" >
+
+                <Typography className={classes.wrapText} component="div" >
                     {`Only ${props.bDayCountMonths} months and
                         ${props.bDayCountDays} days
                         or total ${props.bDayCountDaysOnly} days
