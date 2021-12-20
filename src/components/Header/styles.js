@@ -1,5 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 
+const myFontSize = 18;
+
 export default makeStyles(theme => ({
     appBar: {
       height: '45px',
@@ -25,7 +27,7 @@ export default makeStyles(theme => ({
           ].join(','),
           flexGrow: 1 ,
           marginBottom: '7px',
-          fontSize: 17,
+          fontSize: myFontSize,
           [theme.breakpoints.down('xs')]: {
             fontSize: 14,
             marginBottom: '20px'
@@ -46,7 +48,7 @@ export default makeStyles(theme => ({
           '"Segoe UI Emoji"',
           '"Segoe UI Symbol"',
         ].join(','),
-        fontSize: 17,
+        fontSize: myFontSize,
         [theme.breakpoints.down('xs')]: {
           fontSize: 14,
           marginBottom: '20px'

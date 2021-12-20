@@ -17,16 +17,17 @@ const App = () => {
             width: '50%',
             margin: '13% 25%',
             [theme.breakpoints.down('xs')]: {
-                margin: '13% 25% 6%',
+                margin: '5% 5%',
+                width: '90%'
             }
-       }           
+       }       
+
     }));
 
     const classes = useStyles();    
    
-   
     return (
-        <>
+        <Box >
             <CssBaseline />
             <Header />
             <Box className={classes.root}>
@@ -39,7 +40,7 @@ const App = () => {
             <Footer />
 
 
-        </>
+        </Box>
     )
 }
 

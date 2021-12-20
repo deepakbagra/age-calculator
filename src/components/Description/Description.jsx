@@ -7,7 +7,7 @@ const Description = () => {
             <Typography 
                
                 style={{ wordWrap: "break-word", fontSize: 12 }}>
-                    Detail
+                    Detail AAAAAAAAAAAAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaa
                 
             </Typography>
         </Box>

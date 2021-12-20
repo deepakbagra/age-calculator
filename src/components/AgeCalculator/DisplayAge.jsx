@@ -7,7 +7,7 @@ import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 
-const myFontSize = '15';
+const myFontSize = 13;
 
 const DisplayAge = (props) => {
     return (        
@@ -32,18 +32,19 @@ const DisplayAge = (props) => {
             <CardContent style={{display:'flex'}} >
                 <CakeIcon />
                 <Typography style={{fontSize : myFontSize}} component="div">Birthday Countdown...</Typography>
-            {/* </CardContent> */}
-        
-            {/* <CardContent style={{display:'flex'}} > */}
+            </CardContent>
+            <CardContent style={{display:'flex'}} >
                 <HourglassTopIcon />
                 <Typography style={{fontSize : myFontSize}} component="div" >
-                    {`... Only ${props.bDayCountMonths} months and
-                     ${props.bDayCountDays} days
-                     or total ${props.bDayCountDaysOnly} days
-                     to go to your birthday.`}
-                </Typography> 
-                <CelebrationIcon />       
-            </CardContent>
+                    {`Only ${props.bDayCountMonths} months and
+                        ${props.bDayCountDays} days
+                        or total ${props.bDayCountDaysOnly} days
+                        to go to your birthday.`}
+                </Typography>
+                <CelebrationIcon /> 
+            </CardContent> 
+                     
+            
             
         </Card>
        
