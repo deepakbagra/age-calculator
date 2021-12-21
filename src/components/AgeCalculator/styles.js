@@ -2,38 +2,69 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(theme => ({
     wrapText:{        
-        fontSize: 14,
+        fontSize: 16,
         [theme.breakpoints.down('xs')]: {
-            fontSize: 12,
-        },
-        [theme.breakpoints.up('md')]: {
-            fontSize: 16,
+            fontSize: 13,
         },
         [theme.breakpoints.between('sm', 'md')]: {
-            fontSize: 14,
-        }       
+            fontSize: 15,
+        } ,
+        [theme.breakpoints.between('md', 'lg')]: {
+            fontSize: 20,
+        },
+        [theme.breakpoints.between('lg', 'xl')]: {
+            fontSize: 25,
+        },  
     },
-    button:{
+    button:{        
+        "&.MuiButton-root": {           
+            border: '1px solid',
+            borderColor: 'blue'                                                                      
+        },
         "&.MuiButton-text": {
-            textTransform: 'none',
-            fontSize: 15,                                                        
-            color:'#bf360c',        
-        }
-    },
-    input: {
-        "&.MuiTypography-root": {
-            fontSize: 14,
+            textTransform: 'none',                                                                                             
+            color:'#bf360c',
+            fontSize: 16,
             [theme.breakpoints.down('xs')]: {
-                fontSize: 12,
-            },
-            [theme.breakpoints.up('md')]: {
-                fontSize: 16,
+                fontSize: 13,
             },
             [theme.breakpoints.between('sm', 'md')]: {
-                fontSize: 14,
-            }  
-        } 
-            
+                fontSize: 15,
+            } ,
+            [theme.breakpoints.between('md', 'lg')]: {
+                fontSize: 20,
+            },
+            [theme.breakpoints.between('lg', 'xl')]: {
+                fontSize: 25,
+            },                                                                     
+        },
+        
+        height: 37,        
+        
+    },
+    headerText: {
+        "&.MuiTypography-root": {
+            marginBottom: '2%',
+            margin: '1%',
+            leftSpacing: 'none',
+            fontSize: 16,
+            [theme.breakpoints.down('xs')]: {
+                fontSize: 13,
+            },
+            [theme.breakpoints.between('sm', 'md')]: {
+                fontSize: 15,
+            } ,
+            [theme.breakpoints.between('md', 'lg')]: {
+                fontSize: 20,
+            },
+            [theme.breakpoints.between('lg', 'xl')]: {
+                fontSize: 25,
+            },
+       
+        }
     }
+             
+            
+    
     
 }));

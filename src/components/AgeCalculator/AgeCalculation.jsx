@@ -88,10 +88,10 @@ const AgeCalculation = () => {
   return (
     <>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
-        <Typography gutterBottom marginBottom={'2%'}
-         bgcolor={'#efebe9'} className={classes.input} >
-          Please pick your date-of-birth from the Calendar Icon
-          or type in the box below in dd/mm/yyyy format to calculate your age.</Typography>
+        <Typography className={classes.headerText}
+         bgcolor={'#efebe9'}  >
+          Please select your date-of-birth in "dd/mm/yyyy" format
+           and then click on "Calculate Age" button to calculate your age.</Typography>
         
         <DatePicker          
                    
@@ -110,10 +110,10 @@ const AgeCalculation = () => {
              }} />}
         />
       </LocalizationProvider >
-      <Button fullWidth className={classes.button}
+      <Button fullWidth variant = 'text' className={classes.button}
           onClick={handleOnSubmit} 
-      > <Typography>
-          Click Me to Calculate Age </Typography>
+      > 
+          Calculate Age 
       </Button> 
       
         {displayResult ?
