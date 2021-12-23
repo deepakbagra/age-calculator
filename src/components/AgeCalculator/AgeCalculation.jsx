@@ -98,15 +98,16 @@ const AgeCalculation = () => {
           disableFuture
           inputFormat='dd/MM/yyyy'
           label="date-of-birth (dd/mm/yyyy)"              
-          value={selectDate}
+          value={selectDate}                     
           onChange={handleChangeDate}          
           renderInput={params =>
              <TextField
-             fullWidth             
+             fullWidth                                                   
              {...params}
              sx={{
                svg: {color:'#bf360c'},
-               label: {color: 'blue'}
+               label: {color: 'blue'},                                                  
+
              }} />}
         />
       </LocalizationProvider >

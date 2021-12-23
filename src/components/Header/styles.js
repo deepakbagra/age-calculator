@@ -33,13 +33,13 @@ export default makeStyles(theme => ({
               fontSize: 16,
           },
           [theme.breakpoints.between('sm', 'md')]: {
-              fontSize: 20,
+              fontSize: 18,
           } ,
           [theme.breakpoints.between('md', 'lg')]: {
-              fontSize: 22,
+              fontSize: 20,
           },
           [theme.breakpoints.between('lg', 'xl')]: {
-              fontSize: 30,
+              fontSize: 27,
           },
     },
 
@@ -49,13 +49,13 @@ export default makeStyles(theme => ({
               fontSize: 16,
           },
           [theme.breakpoints.between('sm', 'md')]: {
-              fontSize: 20,
+              fontSize: 18,
           } ,
           [theme.breakpoints.between('md', 'lg')]: {
-              fontSize: 22,
+              fontSize: 20,
           },
           [theme.breakpoints.between('lg', 'xl')]: {
-              fontSize: 30,
+              fontSize: 27,
           },
       },
       
