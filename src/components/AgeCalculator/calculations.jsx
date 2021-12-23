@@ -140,21 +140,31 @@ export const bDayCount = (inputDob) => {
     if (currentDay !== endDay || currentMonth !== endMonth) {
 
         let month = currentMonth;
-        bDayCountdownDays = eachMonthDays[month] - currentDay;    
-    
-        // adding days for in-between months
-        month++;
-        month %= 13;
-        if (month === 0) month++; 
-        while (month !== endMonth) {
-            month %= 13;
-            if (month === 0) month++;
-            bDayCountdownDays += eachMonthDays[month];            
-            month++;        
+        if (currentMonth === endMonth ) {
+            bDayCountdownDays = endDay - currentDay;
+        }
+        else {
+            bDayCountdownDays = eachMonthDays[month] - currentDay;
         }
         
-        // adding for the birthday's month
-        bDayCountdownDays += endDay;
+        if (currentMonth !== endMonth ||
+             (currentMonth === endMonth && endDay < currentDay)) {
+
+            // adding days for in-between months
+            month++;
+            month %= 13;
+            if (month === 0) month++; 
+            while (month !== endMonth) {
+                month %= 13;
+                if (month === 0) month++;
+                bDayCountdownDays += eachMonthDays[month];            
+                month++;        
+            }
+            // adding for the birthday's month
+            bDayCountdownDays += endDay;
+        }
+        
+        
     }   
     
     let resultBday = [bDayCountdownMonth,
