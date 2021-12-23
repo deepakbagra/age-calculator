@@ -38,10 +38,19 @@ const DisplayAge = (props) => {
                 <HourglassTopIcon />
 
                 <Typography className={classes.wrapText} component="div" >
-                    {`Only ${props.bDayCountMonths} months and
-                        ${props.bDayCountDays} days
-                        or total ${props.bDayCountDaysOnly} days
-                        to go to your birthday.`}
+                { (props.bDayCountMonths ===0 && props.bDayCountDays == 0) ?
+                    
+                    'Today is your birthday. We wish you a Happy Birthday!' :
+                   
+                    props.bDayCountMonths !== 0 ? `Only ${props.bDayCountMonths} months and
+                    ${props.bDayCountDays} days
+                    or total ${props.bDayCountDaysOnly} days
+                    to go to your birthday.`
+                    : ` Just ${props.bDayCountDaysOnly} days
+                    to go to your birthday.`                   
+                
+                }
+                
                 </Typography>
                 <CelebrationIcon /> 
             </CardContent> 
