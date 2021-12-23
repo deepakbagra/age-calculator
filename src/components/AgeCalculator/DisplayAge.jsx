@@ -38,7 +38,7 @@ const DisplayAge = (props) => {
                 <HourglassTopIcon />
 
                 <Typography className={classes.wrapText} component="div" >
-                { (props.bDayCountMonths ===0 && props.bDayCountDays == 0) ?
+                { (props.bDayCountMonths === 0 && props.bDayCountDays === 0) ?
                     
                     'Today is your birthday. We wish you a Happy Birthday!' :
                    
