@@ -29,14 +29,14 @@ export default makeStyles(theme => ({
         },
         [theme.breakpoints.between('sm', 'md')]: {
             marginTop: '25%',
-            height: '16vh',
+            height: '18vh',
             width: '3.7vh',                        
             borderTopRightRadius: '10vh',
             borderBottomRightRadius: '10vh',
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
             marginTop: '13%',
-            height: '25vh',
+            height: '22vh',
             width: '5vh',                        
             borderTopRightRadius: '13vh',
             borderBottomRightRadius: '13vh',
@@ -83,9 +83,9 @@ export default makeStyles(theme => ({
         },
         [theme.breakpoints.between('sm', 'md')]: {
             marginLeft: '8%',
-            marginTop: '50%',
+            marginTop: '52%',
             "&.MuiSvgIcon-root": {
-                fontSize: '20px'
+                fontSize: '18px'
             },
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
