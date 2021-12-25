@@ -90,7 +90,7 @@ export default makeStyles(theme => ({
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
             marginLeft: '7%',
-            marginTop: '56%',
+            marginTop: '54%',
             "&.MuiSvgIcon-root": {
                 fontSize: '20px'
             },
