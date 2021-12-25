@@ -6,45 +6,45 @@ export default makeStyles(theme => ({
         position: 'absolute',
         background: 'lightGrey',
         marginTop: '13%',
-        height: '31vh',
-        width: '7vh',                        
+        height: '15vh',
+        width: '5vh',                        
         borderTopRightRadius: '10vh',
         borderBottomRightRadius: '10vh',
 
         [theme.breakpoints.down('xs')]: {
             marginTop: '32%',
-            height: '14vh',
-            width: '3.3vh',                        
+            height: '11.3vh',
+            width: '3vh',                        
             borderTopRightRadius: '7vh',
             borderBottomRightRadius: '7vh',
             
         },
         [theme.breakpoints.between('xs', 'sm')]: {
             marginTop: '32%',
-            height: '17vh',
-            width: '3.9vh',                        
+            height: '12vh',
+            width: '3vh',                        
             borderTopRightRadius: '7vh',
             borderBottomRightRadius: '7vh',
             
         },
         [theme.breakpoints.between('sm', 'md')]: {
             marginTop: '25%',
-            height: '22vh',
-            width: '4.7vh',                        
+            height: '14vh',
+            width: '3.3vh',                        
             borderTopRightRadius: '10vh',
             borderBottomRightRadius: '10vh',
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
             marginTop: '13%',
-            height: '24vh',
-            width: '5vh',                        
+            height: '35vh',
+            width: '8vh',                        
             borderTopRightRadius: '13vh',
             borderBottomRightRadius: '13vh',
         },
         [theme.breakpoints.between('lg', 'xl')]: {
             marginTop: '9%',
-            height: '50vh',
-            width: '12vh',                        
+            height: '37vh',
+            width: '10vh',                        
             borderTopRightRadius: '13vh',
             borderBottomRightRadius: '13vh',
         }, 
@@ -92,7 +92,7 @@ export default makeStyles(theme => ({
             marginLeft: '7%',
             marginTop: '54%',
             "&.MuiSvgIcon-root": {
-                fontSize: '18px'
+                fontSize: '22px'
             },
         },
         [theme.breakpoints.between('lg', 'xl')]: {
