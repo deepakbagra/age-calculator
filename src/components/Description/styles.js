@@ -11,7 +11,7 @@ export default makeStyles(theme => ({
             fontSize: 15,
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
-            fontSize: 18,
+            fontSize: 16,
         },
         [theme.breakpoints.between('lg', 'xl')]: {
             fontSize: 23,

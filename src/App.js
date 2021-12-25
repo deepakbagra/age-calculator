@@ -9,6 +9,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import AgeCalculation from './components/AgeCalculator/AgeCalculation';
 import Description from './components/Description/Description';
+import SocialMedia from './components/SocialMedia/SocialMedia';
 
 const App = () => {
     const classes = useStyles();  
@@ -20,7 +21,15 @@ const App = () => {
             'sans-serif',
           ].join(','),
         },
-             
+        breakpoints: {
+            values: {
+              xs: 380,
+              sm: 600,
+              md: 900,
+              lg: 1200,
+              xl: 1536,
+            },
+          },             
     });    
      
    
@@ -28,6 +37,9 @@ const App = () => {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Header />
+
+            <SocialMedia />
+
             <Box className={classes.ageCalculation}>
                 <AgeCalculation/>
             </Box>
