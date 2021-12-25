@@ -13,30 +13,30 @@ export default makeStyles(theme => ({
 
         [theme.breakpoints.down('xs')]: {
             marginTop: '32%',
-            height: '12vh',
-            width: '3vh',                        
+            height: '14vh',
+            width: '3.3vh',                        
             borderTopRightRadius: '7vh',
             borderBottomRightRadius: '7vh',
             
         },
         [theme.breakpoints.between('xs', 'sm')]: {
             marginTop: '32%',
-            height: '13.6vh',
-            width: '3.5vh',                        
+            height: '17vh',
+            width: '3.9vh',                        
             borderTopRightRadius: '7vh',
             borderBottomRightRadius: '7vh',
             
         },
         [theme.breakpoints.between('sm', 'md')]: {
             marginTop: '25%',
-            height: '18vh',
-            width: '3.7vh',                        
+            height: '22vh',
+            width: '4.7vh',                        
             borderTopRightRadius: '10vh',
             borderBottomRightRadius: '10vh',
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
             marginTop: '13%',
-            height: '22vh',
+            height: '24vh',
             width: '5vh',                        
             borderTopRightRadius: '13vh',
             borderBottomRightRadius: '13vh',
@@ -50,8 +50,8 @@ export default makeStyles(theme => ({
         }, 
         [theme.breakpoints.up('lg')]: {
             marginTop: '15%',
-            height: '35vh',
-            width: '7vh',                        
+            height: '50vh',
+            width: '10vh',                        
             borderTopRightRadius: '13vh',
             borderBottomRightRadius: '13vh',
         },                      
@@ -71,40 +71,40 @@ export default makeStyles(theme => ({
             marginLeft: '12%',
             marginTop: '45%',
             "&.MuiSvgIcon-root": {
-                fontSize: '11px'
+                fontSize: '10px'
             },            
         },
         [theme.breakpoints.between('xs', 'sm')]: {
             marginLeft: '8%',
             marginTop: '47%',
             "&.MuiSvgIcon-root": {
-                fontSize: '15px'
+                fontSize: '13px'
             },            
         },
         [theme.breakpoints.between('sm', 'md')]: {
-            marginLeft: '6%',
-            marginTop: '52%',
+            marginLeft: '8%',
+            marginTop: '55%',
             "&.MuiSvgIcon-root": {
-                fontSize: '18px'
+                fontSize: '15px'
             },
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
             marginLeft: '7%',
             marginTop: '54%',
             "&.MuiSvgIcon-root": {
-                fontSize: '20px'
+                fontSize: '18px'
             },
         },
         [theme.breakpoints.between('lg', 'xl')]: {
             marginLeft: '14%',
-            marginTop: '70%',
+            marginTop: '67%',
             "&.MuiSvgIcon-root": {
                 fontSize: '27px'
             },
         },
         [theme.breakpoints.up('lg')]: {
             marginLeft: '16%',
-            marginTop: '80%',
+            marginTop: '72%',
             "&.MuiSvgIcon-root": {
                 fontSize: '30px'
             },
