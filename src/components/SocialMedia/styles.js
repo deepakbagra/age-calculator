@@ -36,8 +36,8 @@ export default makeStyles(theme => ({
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
             marginTop: '13%',
-            height: '35vh',
-            width: '8vh',                        
+            height: '27vh',
+            width: '6.3vh',                        
             borderTopRightRadius: '13vh',
             borderBottomRightRadius: '13vh',
         },
