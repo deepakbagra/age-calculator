@@ -13,7 +13,7 @@ export default makeStyles(theme => ({
 
         [theme.breakpoints.down('xs')]: {
             marginTop: '32%',
-            height: '11.3vh',
+            height: '15vh',
             width: '3vh',                        
             borderTopRightRadius: '7vh',
             borderBottomRightRadius: '7vh',
@@ -69,9 +69,9 @@ export default makeStyles(theme => ({
         
         [theme.breakpoints.down('xs')]: {
             marginLeft: '12%',
-            marginTop: '45%',
+            marginTop: '58%',
             "&.MuiSvgIcon-root": {
-                fontSize: '10px'
+                fontSize: '13px'
             },            
         },
         [theme.breakpoints.between('xs', 'sm')]: {
