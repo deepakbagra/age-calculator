@@ -3,18 +3,18 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles(theme => ({
     wrapContent:{
         wordWrap: "break-word",
-        fontSize: 16,        
+        fontSize: 14,        
         [theme.breakpoints.down('xs')]: {
-            fontSize: 13,
+            fontSize: 11,
         },
         [theme.breakpoints.between('sm', 'md')]: {
-            fontSize: 15,
+            fontSize: 13,
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
-            fontSize: 16,
+            fontSize: 14,
         },
         [theme.breakpoints.between('lg', 'xl')]: {
-            fontSize: 23,
+            fontSize: 16,
         },
     },
     wrapHeader:{
