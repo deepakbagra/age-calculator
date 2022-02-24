@@ -10,6 +10,13 @@ import useStyle from './styles';
 
 const DisplayAge = (props) => {
     const classes = useStyle();
+
+    // defining output strings
+
+    let ageStr = `You are ${props.years} years,
+                ${props.months} months, and ${props.days} days old
+                or total ${props.daysOnly} days old.`;
+                
     
     return (        
             
@@ -25,7 +32,7 @@ const DisplayAge = (props) => {
                 <Typography className={classes.wrapText} component="div" >
                     {`You are ${props.years} years,
                     ${props.months} months, and ${props.days} days old
-                    or total ${props.daysOnly} days old.  `}
+                    or total ${props.daysOnly} days old.`}
                 </Typography>      
             </CardContent>
 
