@@ -10,7 +10,7 @@ const Footer = () => {
             <Typography className={classes.text}>
                 {new Date().getFullYear()}  
                 {'Copyright © '}
-                | deepakwebtech | All Rights Reserved.
+                | computemyage.com | All Rights Reserved.
             </Typography>
         </Box>
     )
