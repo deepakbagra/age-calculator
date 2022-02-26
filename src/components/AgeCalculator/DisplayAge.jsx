@@ -13,9 +13,9 @@ const DisplayAge = (props) => {
 
     // defining output strings
 
-    let ageStr = `You are ${props.years} years,
-                ${props.months} months, and ${props.days} days old
-                or total ${props.daysOnly} days old.`;
+    // let ageStr = `You are ${props.years} years,
+    //             ${props.months} months, and ${props.days} days old
+    //             or total ${props.daysOnly} days old.`;
                 
     
     return (        
