@@ -2,18 +2,18 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(theme => ({
     wrapText:{        
-        fontSize: 16,
+        fontSize: 14,
         [theme.breakpoints.down('xs')]: {
             fontSize: 13,
         },
         [theme.breakpoints.between('sm', 'md')]: {
-            fontSize: 15,
+            fontSize: 14,
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
-            fontSize: 17,
+            fontSize: 16,
         },
         [theme.breakpoints.between('lg', 'xl')]: {
-            fontSize: 25,
+            fontSize: 18,
         },  
     },
     button:{        
@@ -24,18 +24,18 @@ export default makeStyles(theme => ({
         "&.MuiButton-text": {
             textTransform: 'none',                                                                                             
             color:'#bf360c',
-            fontSize: 16,
+            fontSize: 14,
             [theme.breakpoints.down('xs')]: {
                 fontSize: 13,
             },
             [theme.breakpoints.between('sm', 'md')]: {
-                fontSize: 15,
+                fontSize: 14,
             } ,
             [theme.breakpoints.between('md', 'lg')]: {
-                fontSize: 18,
+                fontSize: 16,
             },
             [theme.breakpoints.between('lg', 'xl')]: {
-                fontSize: 25,
+                fontSize: 18,
             },                                                                     
         },
         
@@ -47,18 +47,18 @@ export default makeStyles(theme => ({
             marginBottom: '2%',
             margin: '1%',
             leftSpacing: 'none',
-            fontSize: 16,
+            fontSize: 14,
             [theme.breakpoints.down('xs')]: {
                 fontSize: 13,
             },
             [theme.breakpoints.between('sm', 'md')]: {
-                fontSize: 15,
+                fontSize: 14,
             } ,
             [theme.breakpoints.between('md', 'lg')]: {
-                fontSize: 17,
+                fontSize: 16,
             },
             [theme.breakpoints.between('lg', 'xl')]: {
-                fontSize: 23,
+                fontSize: 18,
             },
        
         }

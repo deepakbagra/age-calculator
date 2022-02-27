@@ -19,19 +19,19 @@ export default makeStyles(theme => ({
     },
     wrapHeader:{
         wordWrap: "break-word",
-        fontSize: 16, 
+        fontSize: 14, 
         fontWeight: 'bold',       
         [theme.breakpoints.down('xs')]: {
             fontSize: 13,
         },
         [theme.breakpoints.between('sm', 'md')]: {
-            fontSize: 15,
+            fontSize: 14,
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
-            fontSize: 20,
+            fontSize: 14,
         },
         [theme.breakpoints.between('lg', 'xl')]: {
-            fontSize: 25,
+            fontSize: 18,
         },
     }
 }));

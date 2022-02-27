@@ -30,32 +30,32 @@ export default makeStyles(theme => ({
           flexGrow: 1 ,
                             
           [theme.breakpoints.down('xs')]: {
-              fontSize: 16,
+              fontSize: 14,
           },
           [theme.breakpoints.between('sm', 'md')]: {
-              fontSize: 18,
+              fontSize: 16,
           } ,
           [theme.breakpoints.between('md', 'lg')]: {
-              fontSize: 20,
+              fontSize: 18,
           },
           [theme.breakpoints.between('lg', 'xl')]: {
-              fontSize: 27,
+              fontSize: 22,
           },
     },
 
     rightSide: {  
                 
           [theme.breakpoints.down('xs')]: {
-              fontSize: 16,
+              fontSize: 14,
           },
           [theme.breakpoints.between('sm', 'md')]: {
-              fontSize: 18,
+              fontSize: 16,
           } ,
           [theme.breakpoints.between('md', 'lg')]: {
-              fontSize: 20,
+              fontSize: 18,
           },
           [theme.breakpoints.between('lg', 'xl')]: {
-              fontSize: 27,
+              fontSize: 22,
           },
       },
       
