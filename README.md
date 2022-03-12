@@ -18,4 +18,4 @@ Frontend Web Application
 - Exact calculation tested with all possible inputs 
 
 ## Current Status
-- Production
+- Maintenance
