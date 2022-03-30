@@ -21,7 +21,7 @@ export default makeStyles(theme => ({
         },
         [theme.breakpoints.between('xs', 'sm')]: {
             marginTop: '32%',
-            height: '12vh',
+            height: '16vh',
             width: '3vh',                        
             borderTopRightRadius: '7vh',
             borderBottomRightRadius: '7vh',
@@ -29,14 +29,14 @@ export default makeStyles(theme => ({
         },
         [theme.breakpoints.between('sm', 'md')]: {
             marginTop: '25%',
-            height: '14vh',
+            height: '18vh',
             width: '3.3vh',                        
             borderTopRightRadius: '10vh',
             borderBottomRightRadius: '10vh',
         } ,
         [theme.breakpoints.between('md', 'lg')]: {
             marginTop: '13%',
-            height: '21vh',
+            height: '26vh',
             width: '5.5vh',                        
             borderTopRightRadius: '13vh',
             borderBottomRightRadius: '13vh',
